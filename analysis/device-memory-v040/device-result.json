@@ -1,0 +1,33 @@
+{
+  "version": "0.4.0",
+  "source": "DBI MTP device log",
+  "log_sha256": "83903940f38370c15c34ac253a18e7eeb8be1b74aae35fd90ef127263ec44fbc",
+  "attempts": [
+    {
+      "attempt": 1,
+      "passed": true,
+      "function_entries": 31,
+      "checked_accesses": 1816,
+      "mutex_records": 10,
+      "memory_query_completed": true,
+      "memory_total": 50331648,
+      "memory_available": 17825792,
+      "backed_bytes": 31621920,
+      "clock_service_executed": false
+    },
+    {
+      "attempt": 2,
+      "passed": true,
+      "function_entries": 31,
+      "checked_accesses": 1816,
+      "mutex_records": 10,
+      "memory_query_completed": true,
+      "memory_total": 50331648,
+      "memory_available": 17825792,
+      "backed_bytes": 31621920,
+      "clock_service_executed": false
+    }
+  ],
+  "cleanup_backed_bytes": 0,
+  "scope": "Bounded CRT startup through memory query and tables, before time import; no gameplay result"
+}

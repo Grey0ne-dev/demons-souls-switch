@@ -1,0 +1,42 @@
+{
+  "version": "0.26.0",
+  "source": "DBI MTP device log",
+  "passed": true,
+  "validation_checks": 4308,
+  "validation_mismatches": [],
+  "log_sha256": "f4b5ab97de29b7103ed74c9a5de2f6d73e3cbe8572bf381534dd61b62be328a7",
+  "attempts": [
+    {
+      "attempt": 1,
+      "passed": true,
+      "constructors_completed": 12,
+      "constructor_thirteen_started": true,
+      "function_entries": 966,
+      "checked_accesses": 14378,
+      "large_sort_partition_entries": 2,
+      "clock_ticks": 685694785049,
+      "clock_microseconds": 35713270054
+    },
+    {
+      "attempt": 2,
+      "passed": true,
+      "constructors_completed": 12,
+      "constructor_thirteen_started": true,
+      "function_entries": 966,
+      "checked_accesses": 14378,
+      "large_sort_partition_entries": 2,
+      "clock_ticks": 685838363815,
+      "clock_microseconds": 35720748115
+    }
+  ],
+  "reload_observed": true,
+  "cleanup_backed_bytes": 0,
+  "scope": "Twelve constructors completed; all four narrow streams initialized and registered; stop before wide initializer 0168BC68; constructor thirteen remains incomplete",
+  "evidence_limits": "Object and method memory is checked by the on-device checkpoint validator; this log independently exposes summaries, the full function trace and final cleanup.",
+  "provenance": {
+    "validator_sha256": "0db0a19dabf5003d5d511c77203bd727c109ab8578206fc5fe86ff8dd3d82577",
+    "expected_trace_sha256": "5c759132a2ba9490acda2255064c99dc382dc8b402a2fc75c725753ba3e4bd54",
+    "reference_manifest_sha256": "82482ee1130d2e7883120308f3c5367d76037f91cad6d6ac7c6c77e01ba5e269",
+    "installed_candidate_sha256": "9ae63541f909d998bb0a8cc294c3e41a7bbc8a84eb9a3ed29efb9341df6627ab"
+  }
+}

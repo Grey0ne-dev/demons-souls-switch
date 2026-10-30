@@ -1,0 +1,127 @@
+{
+  "elf_sha256": "90eaa5e9e48b4874292badc311ccea253e6a622ff188bfbdbe76e6f6821269d8",
+  "new_functions": {
+    "01668208": {
+      "source_chunk": "011",
+      "body_sha256": "8de7037bb0bee1704d962cdeaa2cb59a4eb17222945b4b230d38113eddad1c12"
+    },
+    "01668E50": {
+      "source_chunk": "011",
+      "body_sha256": "8d642c4a313333b30733f811f25e1f9705509642ef7fbcb2b38c36e0381c56ce"
+    },
+    "0167AED0": {
+      "source_chunk": "011",
+      "body_sha256": "88b0c3f278dd4c4d90c0bbbcaaedb3c87777581565ab2b557ee1ef0611673ca8"
+    },
+    "016884C0": {
+      "source_chunk": "011",
+      "body_sha256": "345b95e1098039017a5113043bf329ac7663070db435ea9416de801f091800f9"
+    },
+    "016888D8": {
+      "source_chunk": "011",
+      "body_sha256": "6afed9ff920157791091fb114064b383331790046305235c7f15451e06a34181"
+    },
+    "0168A6B0": {
+      "source_chunk": "011",
+      "body_sha256": "472b5b5e40a78544aab5b2460659bb86bdd082392c4a5be2331df528a8190b95"
+    }
+  },
+  "original_ranges": [
+    {
+      "start": "0x1668208",
+      "end": "0x1668268",
+      "toc": "0x19d3bac",
+      "opd": "0x19abbb0"
+    },
+    {
+      "start": "0x1668e50",
+      "end": "0x1668f98",
+      "toc": "0x19d3bac",
+      "opd": "0x19abbf8"
+    },
+    {
+      "start": "0x167aed0",
+      "end": "0x167aed8",
+      "toc": "0x19d3bac",
+      "opd": "0x19ac280"
+    },
+    {
+      "start": "0x16884c0",
+      "end": "0x1688538",
+      "toc": "0x19d3bac",
+      "opd": "0x19ac6a0"
+    },
+    {
+      "start": "0x16888d8",
+      "end": "0x1688a08",
+      "toc": "0x19d3bac",
+      "opd": "0x19ac6d8"
+    },
+    {
+      "start": "0x168a6b0",
+      "end": "0x168aba8",
+      "toc": "0x19d3bac",
+      "opd": "0x19ac748"
+    }
+  ],
+  "runtime_allocation_extensions": [
+    {
+      "size": 24,
+      "return_pc": "0x01688380",
+      "li_pc": "0x01688374",
+      "branch_pc": "0x0168837C",
+      "instruction": "0x48002855",
+      "stack": "0x0FEFFA90"
+    },
+    {
+      "size": 8,
+      "return_pc": "0x016884F0",
+      "li_pc": "0x016884E8",
+      "branch_pc": "0x016884EC",
+      "instruction": "0x480026E5",
+      "stack": "0x0FEFFA10"
+    }
+  ],
+  "facet_address": "0x600000D0",
+  "facet_cache": "0x01B50430",
+  "cleanup_head": "0x01CE6720",
+  "cleanup_node": "0x600000F0",
+  "cleanup_callback": "0x019AC6D0",
+  "locale_snapshot_source": "0x01AD5BC4",
+  "snapshot_words": [
+    "0x0176F838",
+    "0x0176F840",
+    "0x0176F840",
+    "0x0176F840",
+    "0x0176F898",
+    "0x0176F898",
+    "0x0176F898",
+    "0x0176F920",
+    "0x0176F920",
+    "0x0176F920",
+    "0x0176F920",
+    "0x0176F920",
+    "0x0176F920",
+    "0x0176F920",
+    "0x0176F920",
+    "0x0176F920",
+    "0x0176F920",
+    "0x0176F950",
+    "0x0176F958",
+    "0x0176F960",
+    "0x0176F968"
+  ],
+  "virtual_boundary": {
+    "call_pc": "0x0168827C",
+    "opcode": "0x4E800421",
+    "return_pc": "0x01688280",
+    "vtable": "0x01872C50",
+    "offset": "0x18",
+    "descriptor": "0x01970348",
+    "target": "0x009E96A0",
+    "toc": "0x019B5040",
+    "target_selected": false,
+    "target_entered": false
+  },
+  "semantic_limits": "First facet and cleanup registration validated; stream and constructor 13 are incomplete. No virtual method or registered destructor is invoked."
+}

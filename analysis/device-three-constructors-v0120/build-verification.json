@@ -1,0 +1,60 @@
+{
+  "version": "0.12.0",
+  "nro_size": 383173,
+  "nro_sha256": "5bbdcd9fa3fa1f099d803062f7500feeaad6c339b813a11398bcf22e0645eefc",
+  "switch_cross_build_passed": true,
+  "host_checks": {
+    "regression_main": 421,
+    "regression_fault_fixtures": 123,
+    "atomic_backend": 30,
+    "rwlock_backend": 15,
+    "automatic_manual_equivalence": 8,
+    "bad_callsite": 4,
+    "three_constructor_checkpoint": 20,
+    "linked_branch_execution": 9,
+    "total": 630
+  },
+  "sanitizers": [
+    "AddressSanitizer",
+    "UndefinedBehaviorSanitizer",
+    "LeakSanitizer"
+  ],
+  "selected_bodies": 104,
+  "annotated_functions": 20,
+  "annotated_sites": 40,
+  "source_hashes": {
+    "switch-port/entry/ds_entry.cpp": "5b02f5f30998ba8aad7f4c7435b8baac4a05c8c38b62a567a94bc74953a2e3da",
+    "switch-port/entry/ds_entry.h": "58173436669f7765c4ecbfc18cfa02ef3cc4b428a7154e82bde8b22318a2d16a",
+    "switch-port/entry/ds_kernel_mutex.cpp": "9a2cdc1dca6ed1e2de2b46cfe44d916a204b7139215476d8b8a318eab4668e2c",
+    "switch-port/entry/generate_entry.py": "475f402d412b3d61998a355f4ab30df90e6cf567efcd45dbc27e9e2a727a2f47",
+    "switch-port/source/main.c": "3b9810460909cdbce9f7b52b5492e4d22975ce2ef493d0a02d8460e4ae4ae74b",
+    "switch-port/tests/test_entry.cpp": "fb57606a8a4350fc308e866cf4c5949173a862b5ace4c7a4e58861041546e4fc",
+    "switch-port/tests/run_entry_tests.sh": "01724ef762681c36271dde4491207a0f9136f4d9a53d5226f96e5164601c1675",
+    "switch-port/tests/test_lifter_links.py": "dd93eb295962fda955f65854c1cfe271277506927009cde7920dd4ff6fb6cb66",
+    "upstream/DemonsSoulsRecomp/ps3recomp/tools/ppu_lifter.py": "178c41aff422e42f26de03408bf97f1025a63e1f19391b9e1f3f9daacadcf014"
+  },
+  "device_installed": true,
+  "device_execution_tested": false,
+  "expected_checkpoint": {
+    "stop": 22,
+    "callee": "0x009E54C8",
+    "constructors_completed": 3,
+    "function_entries": 213,
+    "checked_accesses": 4141,
+    "next_constructor_descriptor": "0x0195FFE0",
+    "name_records": 2,
+    "key_object_pairs": 8,
+    "allocation_calls": 5,
+    "kernel_mutex_calls": 1,
+    "kernel_mutex_handle": "0x1001",
+    "native_kernel_mutexes_after_cleanup": 0,
+    "locks": 7,
+    "unlocks": 7,
+    "writer_locks": 1,
+    "writer_unlocks": 1,
+    "lr": "0x016B84F4",
+    "sp": "0x0FEFFE00"
+  },
+  "sanitizer_scope": "621 startup/backend/dispatch checks use ASan, UBSan and leak detection; nine emitted-branch tests execute ordinary compiled C++ snippets.",
+  "device_transfer_verification": "transfer-verification.json"
+}

@@ -1,0 +1,40 @@
+{
+  "version": "0.18.0",
+  "source": "DBI MTP device log",
+  "passed": true,
+  "validation_checks": 2817,
+  "validation_mismatches": [],
+  "log_sha256": "a15e8eac2f16fee371224108ccec3700c2bd00744d0e79f7943566dc17945239",
+  "attempts": [
+    {
+      "attempt": 1,
+      "passed": true,
+      "constructors_completed": 12,
+      "function_entries": 641,
+      "checked_accesses": 12134,
+      "large_sort_partition_entries": 2,
+      "clock_ticks": 484081366150,
+      "clock_microseconds": 25212571153
+    },
+    {
+      "attempt": 2,
+      "passed": true,
+      "constructors_completed": 12,
+      "function_entries": 641,
+      "checked_accesses": 12134,
+      "large_sort_partition_entries": 2,
+      "clock_ticks": 484174905173,
+      "clock_microseconds": 25217442977
+    }
+  ],
+  "reload_observed": true,
+  "cleanup_backed_bytes": 0,
+  "scope": "Twelve static constructors only; no graphics or gameplay execution",
+  "evidence_limits": "Object and method memory is checked by the on-device checkpoint validator; this log independently exposes summaries, the full function trace and final cleanup.",
+  "provenance": {
+    "validator_sha256": "fbbcb01b618ccf7e90554d828e53dd6bb188b59b7b891b24b092941fe201b197",
+    "expected_trace_sha256": "c465fcab507221df0f6590160c7e46dcd26f684a83f54cee1d7bc854da53f5dc",
+    "reference_manifest_sha256": "82482ee1130d2e7883120308f3c5367d76037f91cad6d6ac7c6c77e01ba5e269",
+    "installed_candidate_sha256": "44c730853e1f9f52e743f968d5dc7efc739d51f7f300dfc6d2bacdf81a88d210"
+  }
+}

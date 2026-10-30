@@ -1,0 +1,8 @@
+{
+  "state_word_checks": 567,
+  "original_instruction_checks": 20,
+  "prior_trace_entries_preserved": 966,
+  "function_entries": 1265,
+  "checked_accesses": 16590,
+  "state_reference_sha256": "19fcd451376d384a82ec8d9a78a641e7a6aa211a06da9a6aeb55909f07ba2835"
+}

@@ -1,0 +1,42 @@
+{
+  "version": "0.19.0",
+  "source": "DBI MTP device log",
+  "passed": true,
+  "validation_checks": 2873,
+  "validation_mismatches": [],
+  "log_sha256": "11f7b40ef83eae8b90aff6578840a60277f9b41925d32b45d02c3b22eb9ba5be",
+  "attempts": [
+    {
+      "attempt": 1,
+      "passed": true,
+      "constructors_completed": 12,
+      "constructor_thirteen_started": true,
+      "function_entries": 652,
+      "checked_accesses": 12206,
+      "large_sort_partition_entries": 2,
+      "clock_ticks": 503261837986,
+      "clock_microseconds": 26211554061
+    },
+    {
+      "attempt": 2,
+      "passed": true,
+      "constructors_completed": 12,
+      "constructor_thirteen_started": true,
+      "function_entries": 652,
+      "checked_accesses": 12206,
+      "large_sort_partition_entries": 2,
+      "clock_ticks": 503428028467,
+      "clock_microseconds": 26220209815
+    }
+  ],
+  "reload_observed": true,
+  "cleanup_backed_bytes": 0,
+  "scope": "Twelve constructors completed; constructor thirteen locale prefix; first allocation unserved",
+  "evidence_limits": "Object and method memory is checked by the on-device checkpoint validator; this log independently exposes summaries, the full function trace and final cleanup.",
+  "provenance": {
+    "validator_sha256": "e6ce1fb98f6327358b0b2834f39f106795ae0316ade3dd95b911ef590ab4d293",
+    "expected_trace_sha256": "0e2b921807c078b3f0472d8531fc776d3157ac481562a588005866d98cc1de50",
+    "reference_manifest_sha256": "82482ee1130d2e7883120308f3c5367d76037f91cad6d6ac7c6c77e01ba5e269",
+    "installed_candidate_sha256": "3843cae625a4607a27cfe6deb7fe146132357e53fcbe8e49902a97e1b87c1ae9"
+  }
+}

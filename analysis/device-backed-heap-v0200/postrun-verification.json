@@ -1,0 +1,19 @@
+{
+  "verified_at_utc": "2026-10-25T19:01:51Z",
+  "version": "0.20.0",
+  "postrun_installed_size": 460997,
+  "postrun_installed_sha256": "993a59244d444bc63ded33234f1093b35f484c172bb1c04bb8cfe3d855b9b8cd",
+  "postrun_readback_matches_sealed_candidate": true,
+  "log_sha256": "45bd21baa8601180f86c7ee620b894e4040eedfccf5842497360d2121a850dad",
+  "device_execution_passed": true,
+  "attempts_passed": 2,
+  "validation_checks": 2931,
+  "validation_mismatches": [],
+  "reload_observed": true,
+  "runtime_allocations_served": [40, 4],
+  "runtime_backed_bytes_per_attempt": 65536,
+  "image_backed_bytes_per_attempt": 31687456,
+  "image_limit_bytes": 50331648,
+  "cleanup_backed_bytes": 0,
+  "device_result": "device-result.json"
+}

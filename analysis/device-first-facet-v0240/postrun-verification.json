@@ -1,0 +1,19 @@
+{
+  "version": "0.24.0",
+  "timestamp_utc": "2026-10-26T09:44:03.905144+00:00",
+  "device_execution_passed": true,
+  "attempts_passed": 2,
+  "reload_observed": true,
+  "validation_checks": 3591,
+  "validation_mismatches": [],
+  "candidate_sha256": "1b9aaee6378998e1ec1ab66e3643d95ec8e62ad407c264b11e96dfc7d47e61fc",
+  "postrun_binary_sha256": "1b9aaee6378998e1ec1ab66e3643d95ec8e62ad407c264b11e96dfc7d47e61fc",
+  "log_sha256": "196f17c895ed8235d457d6fb80514c32ab1cecbf28eae9d89ca1af1b2fc36581",
+  "device_result_sha256": "d46c989978cb0f88ac02f89b3b899f6674a990e538e6c02f10f3896a3bf95dee",
+  "sealed_source_hashes_match": true,
+  "sealed_evidence_hashes_match": true,
+  "mtp_released": true,
+  "clock_advance_microseconds": 7017434,
+  "cleanup_backed_bytes": 0,
+  "independent_validator_review": "No material contradictions found; separate installed-NRO and seal verification performed above."
+}

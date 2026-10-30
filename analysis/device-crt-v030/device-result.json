@@ -1,0 +1,23 @@
+{
+  "version": "0.3.0",
+  "source": "USB MTP device log",
+  "log_sha256": "388de7daa562a2f9a0ad005b360965a29b8d2863b5084c6158ca2b23b35d397a",
+  "attempts": [
+    {
+      "attempt": 1,
+      "passed": true,
+      "functions": 7,
+      "checked_accesses": 1131,
+      "boundary_syscall": 352
+    },
+    {
+      "attempt": 2,
+      "passed": true,
+      "functions": 7,
+      "checked_accesses": 1131,
+      "boundary_syscall": 352
+    }
+  ],
+  "cleanup_backed_bytes": 0,
+  "scope": "Real bounded CRT startup; syscall 352 not executed; no graphics or gameplay result"
+}

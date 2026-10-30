@@ -1,0 +1,116 @@
+{
+  "elf_sha256": "90eaa5e9e48b4874292badc311ccea253e6a622ff188bfbdbe76e6f6821269d8",
+  "new_functions": {
+    "01685248": {
+      "source_chunk": "011",
+      "body_sha256": "591af64de30e9ea59c82bb5998412bbfab089db502ed7b50f3cdfeec3caf05b5"
+    },
+    "01685FC8": {
+      "source_chunk": "011",
+      "body_sha256": "506be41455afae49f720158bd830ceacd1b7de34586dd96143e7caf59742fb70"
+    },
+    "01688138": {
+      "source_chunk": "011",
+      "body_sha256": "6afcf20bc9c9c8a77005155e0a7e6b47837fd212809d6235aafacca3846b700d"
+    },
+    "01688538": {
+      "source_chunk": "011",
+      "body_sha256": "d764fd69e8d52f8c54daad934de03d3199ce972bc71d7406055391d8cb7bf69b"
+    }
+  },
+  "original_ranges": [
+    {
+      "start": "0x1685248",
+      "end": "0x1685e50",
+      "toc": "0x19d3bac",
+      "opd": "0x19ac630"
+    },
+    {
+      "start": "0x1685fc8",
+      "end": "0x1686060",
+      "toc": "0x19d3bac",
+      "opd": "0x19ac640"
+    },
+    {
+      "start": "0x1688138",
+      "end": "0x16884c0",
+      "toc": "0x19d3bac",
+      "opd": "0x19ac660"
+    },
+    {
+      "start": "0x1688538",
+      "end": "0x16885e8",
+      "toc": "0x19d3bac",
+      "opd": "0x19ac6a8"
+    }
+  ],
+  "new_original_bctrl_return_pcs": {
+    "01688138": [
+      23626368,
+      23626500
+    ]
+  },
+  "runtime_allocation_extensions": [
+    {
+      "request_bytes": 40,
+      "original_li_pc": "0x016A0510",
+      "li_instruction": "0x38600028",
+      "branch_pc": "0x016A0518",
+      "branch_instruction": "0x4BFEA6B9",
+      "target": "0x0168ABD0",
+      "return_pc": "0x016A051C",
+      "caller_stack": "0x0FEFFB60",
+      "served": true
+    },
+    {
+      "request_bytes": 4,
+      "original_li_pc": "0x01686EEC",
+      "li_instruction": "0x38600004",
+      "branch_pc": "0x01686EF0",
+      "branch_instruction": "0x48003CE1",
+      "target": "0x0168ABD0",
+      "return_pc": "0x01686EF4",
+      "caller_stack": "0x0FEFFBF0",
+      "served": true
+    },
+    {
+      "request_bytes": 4,
+      "original_li_pc": "0x01685FD8",
+      "li_instruction": "0x38600004",
+      "branch_pc": "0x01685FE8",
+      "branch_instruction": "0x48004BE9",
+      "target": "0x0168ABD0",
+      "return_pc": "0x01685FEC",
+      "caller_stack": "0x0FEFFA00",
+      "served": true
+    },
+    {
+      "request_bytes": 24,
+      "original_li_pc": "0x01688374",
+      "li_instruction": "0x38600018",
+      "branch_pc": "0x0168837C",
+      "branch_instruction": "0x48002855",
+      "target": "0x0168ABD0",
+      "return_pc": "0x01688380",
+      "caller_stack": "0x0FEFFA90",
+      "served": false
+    }
+  ],
+  "runtime_sizes_served": [
+    40,
+    4,
+    52,
+    40,
+    4,
+    4
+  ],
+  "guest_addresses": [
+    "0x60000000",
+    "0x60000030",
+    "0x60000040",
+    "0x60000080",
+    "0x600000B0",
+    "0x600000C0"
+  ],
+  "limits": "Only six exact size/caller/stack requests are served; the seventh request stops before entry. No facet allocation, stream I/O, exception, free or wait support added."
+}

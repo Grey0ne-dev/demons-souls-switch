@@ -1,0 +1,43 @@
+{
+  "version": "0.11.0",
+  "nro_size": 366789,
+  "nro_sha256": "2b36f76802ff277ac87a342ae7c7296694c06fd4d4d01f1445c4d8da4055c492",
+  "switch_cross_build_passed": true,
+  "host_checks": {
+    "main": 415,
+    "fault_fixtures": 123,
+    "atomic_backend": 30,
+    "rwlock_backend": 15,
+    "total": 583
+  },
+  "sanitizers": [
+    "AddressSanitizer",
+    "UndefinedBehaviorSanitizer",
+    "LeakSanitizer"
+  ],
+  "device_installed": false,
+  "device_execution_tested": false,
+  "expected_checkpoint": {
+    "stop": 20,
+    "callee": "0x0066D688",
+    "functions": 176,
+    "accesses": 3647,
+    "constructor_completed": true,
+    "next_constructor_descriptor": "0x01947390",
+    "allocation_calls": 5,
+    "node_address": "0x01AD9DB0",
+    "node_vector_address": "0x01AD9E00",
+    "second_singleton_address": "0x01B4BB0C",
+    "kernel_mutex_calls": 1,
+    "kernel_mutex_handle": "0x1001",
+    "kernel_mutex_output": "0x01AD9DE4",
+    "kernel_mutex_attribute": "0x0FEFFB90",
+    "native_kernel_mutexes_after_cleanup": 0,
+    "locks": 7,
+    "unlocks": 7,
+    "writer_locks": 1,
+    "writer_unlocks": 1,
+    "lr": "0x016B84F4",
+    "sp": "0x0FEFFE00"
+  }
+}

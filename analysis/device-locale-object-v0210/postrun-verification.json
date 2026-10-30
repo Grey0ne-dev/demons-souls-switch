@@ -1,0 +1,15 @@
+{
+  "verified_at_utc": "2026-10-25T19:23:04.960607+00:00",
+  "version": "0.21.0",
+  "installed_binary_matches_candidate": true,
+  "size": 469189,
+  "sha256": "950d3e593d11883f5b300ddceea9c82cc45a24388e480468485dbad405215d46",
+  "sealed_source_and_evidence_hashes_match": true,
+  "device_log_sha256": "feb75ec5f93230742c4d2b5297844d1f22069c457fe667e97b623b38cafb8887",
+  "device_result_sha256": "528c2d9636c169904a25f7ee746bb8091a699d69b83906b2f852f0ef6238d8f2",
+  "device_validation_checks": 2993,
+  "both_attempts_passed": true,
+  "reload_observed": true,
+  "final_backed_bytes": 0,
+  "clock_advance_microseconds": 7505084
+}

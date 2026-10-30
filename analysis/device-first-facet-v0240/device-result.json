@@ -1,0 +1,42 @@
+{
+  "version": "0.24.0",
+  "source": "DBI MTP device log",
+  "passed": true,
+  "validation_checks": 3591,
+  "validation_mismatches": [],
+  "log_sha256": "196f17c895ed8235d457d6fb80514c32ab1cecbf28eae9d89ca1af1b2fc36581",
+  "attempts": [
+    {
+      "attempt": 1,
+      "passed": true,
+      "constructors_completed": 12,
+      "constructor_thirteen_started": true,
+      "function_entries": 799,
+      "checked_accesses": 13238,
+      "large_sort_partition_entries": 2,
+      "clock_ticks": 1566836225046,
+      "clock_microseconds": 81606053387
+    },
+    {
+      "attempt": 2,
+      "passed": true,
+      "constructors_completed": 12,
+      "constructor_thirteen_started": true,
+      "function_entries": 799,
+      "checked_accesses": 13238,
+      "large_sort_partition_entries": 2,
+      "clock_ticks": 1566970959782,
+      "clock_microseconds": 81613070821
+    }
+  ],
+  "reload_observed": true,
+  "cleanup_backed_bytes": 0,
+  "scope": "Twelve constructors completed; first facet construction and cleanup registration complete; stop before invoking virtual method 009E96A0",
+  "evidence_limits": "Object and method memory is checked by the on-device checkpoint validator; this log independently exposes summaries, the full function trace and final cleanup.",
+  "provenance": {
+    "validator_sha256": "27888bfd73e962773037889ed612698739fba34c05c7f0b7c9f70983fe59067c",
+    "expected_trace_sha256": "b7a2f9f870c8fa4385da4c121824ae886cc4d53b4c6d4494cfaf8abf3a58c5f8",
+    "reference_manifest_sha256": "82482ee1130d2e7883120308f3c5367d76037f91cad6d6ac7c6c77e01ba5e269",
+    "installed_candidate_sha256": "1b9aaee6378998e1ec1ab66e3643d95ec8e62ad407c264b11e96dfc7d47e61fc"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "elf_sha256": "90eaa5e9e48b4874292badc311ccea253e6a622ff188bfbdbe76e6f6821269d8",
+  "state_word_checks": 258,
+  "instruction_checks": 9,
+  "prior_trace_entries_preserved": 810,
+  "trace_entries": 966,
+  "state_reference_sha256": "9c14d0dc3ae29abbea75540452b646c176962c2ba04816fc16acbc29d1aa5471",
+  "allocation_contexts": [
+    {
+      "size": 4,
+      "return_pc": "0x01685FEC",
+      "sp": "0x0FEFFA00",
+      "toc": "0x019D3BAC"
+    },
+    {
+      "size": 40,
+      "return_pc": "0x016A051C",
+      "sp": "0x0FEFFB60",
+      "toc": "0x019D3BAC"
+    },
+    {
+      "size": 4,
+      "return_pc": "0x0168704C",
+      "sp": "0x0FEFFBF0",
+      "toc": "0x019D3BAC"
+    },
+    {
+      "size": 4,
+      "return_pc": "0x01685FEC",
+      "sp": "0x0FEFFA00",
+      "toc": "0x019D3BAC"
+    },
+    {
+      "size": 4,
+      "return_pc": "0x01685FEC",
+      "sp": "0x0FEFFB60",
+      "toc": "0x019D3BAC"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "title_id": "BLUS30443",
+  "app_version": "01.00",
+  "file_size": 28222408,
+  "file_sha256": "90eaa5e9e48b4874292badc311ccea253e6a622ff188bfbdbe76e6f6821269d8",
+  "entry_descriptor": 26304824,
+  "entry_code": 74944,
+  "toc": 26955840,
+  "allocated_bytes": 30466848,
+  "segments": [
+    {
+      "program_header_index": 0,
+      "guest_address": 65536,
+      "flags": 4194309,
+      "file_offset": 0,
+      "file_size": 25374024,
+      "memory_size": 25374024,
+      "alignment": 65536,
+      "file_sha256": "e0490e2c533ef296b284868a97dc9125b4b3e3ea6a458697882cb87667c434a9",
+      "memory_sha256": "e0490e2c533ef296b284868a97dc9125b4b3e3ea6a458697882cb87667c434a9"
+    },
+    {
+      "program_header_index": 1,
+      "guest_address": 25493504,
+      "flags": 6291462,
+      "file_offset": 25427968,
+      "file_size": 2646172,
+      "memory_size": 5092824,
+      "alignment": 65536,
+      "file_sha256": "b9f6b52cd6b50b90308319f265587fdbea74442a183f01aa0bc9b6dc766aa519",
+      "memory_sha256": "9f4e74496b03e5a79b3d3ef9d70d5f028682ff4978ba469ebfc05c670881df49"
+    }
+  ],
+  "tls": {
+    "guest_address": 27102312,
+    "file_size": 4,
+    "memory_size": 1076,
+    "file_offset": 27036776,
+    "alignment": 8
+  },
+  "scope": "Hashes and metadata only; no game code or asset bytes."
+}

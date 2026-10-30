@@ -1,0 +1,59 @@
+{
+  "elf_sha256": "90eaa5e9e48b4874292badc311ccea253e6a622ff188bfbdbe76e6f6821269d8",
+  "functions": [
+    {
+      "start": "0x1689180",
+      "end": "0x16891f0",
+      "toc": "0x19d3bac",
+      "opd": "0x19ac708"
+    },
+    {
+      "start": "0x16891f0",
+      "end": "0x1689698",
+      "toc": "0x19d3bac",
+      "opd": "0x19ac710"
+    },
+    {
+      "start": "0x16896c0",
+      "end": "0x1689728",
+      "toc": "0x19d3bac",
+      "opd": "0x19ac720"
+    },
+    {
+      "start": "0x16b7f30",
+      "end": "0x16b7f40",
+      "toc": "0x19d3bac",
+      "opd": "0x19acff0"
+    }
+  ],
+  "runtime_toc": "0x019D3BAC",
+  "toc_fields": {
+    "0x4C78": "0x01872C90",
+    "0x4C84": "0x018C7DE0",
+    "0x4C88": "0x017041B8",
+    "0x4C8C": "0x0174FDE0",
+    "0x495C": "0x01CE5900"
+  },
+  "third_allocation": {
+    "li_pc": "0x016892D4",
+    "instruction": "0x38600034",
+    "request_bytes": 52,
+    "branch_pc": "0x016892D8",
+    "target": "0x0168ABD0",
+    "return_pc": "0x016892DC"
+  },
+  "next_thunk": {
+    "selected": false,
+    "start": "0x01676088",
+    "end_exclusive": "0x01676098",
+    "instructions": [
+      "0xF8410028",
+      "0x3C42FFFE",
+      "0x38421494",
+      "0x4B8A13B4"
+    ],
+    "tail_target": "0x00F17448",
+    "runtime_toc_after_adjustment": "0x019B5040",
+    "note": "Pinned source body also includes unreachable neighboring thunk sequences; no source chunk modified."
+  }
+}

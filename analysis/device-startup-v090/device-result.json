@@ -1,0 +1,38 @@
+{
+  "version": "0.9.0",
+  "source": "DBI MTP device log",
+  "log_sha256": "012fde12766cd19c44a16cf88c2909bb554710d31967bdca81ec2503fc5f2a3c",
+  "passed": true,
+  "attempts": [
+    {
+      "attempt": 1,
+      "passed": true,
+      "function_entries": 95,
+      "checked_accesses": 2505,
+      "pool_initialized": true,
+      "pool_base": "0x01AD6B78",
+      "pool_bytes": 393216,
+      "allocation_address": "0x01AD6C00",
+      "allocation_bytes": 384,
+      "bootstrap_fallback_calls": 0,
+      "atomic_attempts": 1,
+      "atomic_successes": 1,
+      "singleton_completed": true,
+      "constructor_completed": false,
+      "mutex_records": 12,
+      "mutex_locks": 3,
+      "mutex_unlocks": 3,
+      "writer_locks": 1,
+      "writer_unlocks": 1,
+      "native_mutex_held_at_stop": 0,
+      "native_writers_held_at_stop": 0,
+      "native_mutexes_after_cleanup": 0,
+      "native_rwlocks_after_cleanup": 0,
+      "clock_frequency": 19200000,
+      "clock_microseconds": 100540547848
+    }
+  ],
+  "reload_observed": false,
+  "cleanup_backed_bytes": 0,
+  "scope": "Pool initialization, first allocation and singleton publication; outer constructor incomplete; no graphics or gameplay result"
+}

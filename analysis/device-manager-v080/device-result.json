@@ -1,0 +1,25 @@
+{
+  "version": "0.8.0",
+  "source": "DBI MTP device log",
+  "log_sha256": "64681d1578ebd163d695df230ce603531f0c503ef83a5eeb6ed7e2886c7e7fae",
+  "attempts": [
+    {
+      "attempt": 1,
+      "passed": true,
+      "function_entries": 72,
+      "checked_accesses": 2208,
+      "manager_published": true,
+      "pool_base": "0x01AD6B78",
+      "pool_bytes": 393216,
+      "allocator_setup_executed": false,
+      "locks": 2,
+      "unlocks": 2,
+      "native_mutex_held_at_stop": 0,
+      "native_mutexes_after_cleanup": 0,
+      "native_rwlocks_after_cleanup": 0,
+      "constructor_completed": false
+    }
+  ],
+  "cleanup_backed_bytes": 0,
+  "scope": "Manager published and unlocked; full static pool handoff validated; allocator and outer initialization incomplete"
+}

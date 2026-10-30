@@ -1,0 +1,43 @@
+{
+  "version": "0.6.0",
+  "source": "DBI MTP device log",
+  "log_sha256": "bf6aab7028b5355138dd222104f1796280e93cbb81dc25c24c7ad14da8ed5317",
+  "attempts": [
+    {
+      "attempt": 1,
+      "passed": true,
+      "function_entries": 53,
+      "checked_accesses": 2022,
+      "constructor_started": true,
+      "constructor_completed": false,
+      "thread_id_calls": 1,
+      "native_locks": 1,
+      "native_unlocks": 1,
+      "native_held_at_stop": 0,
+      "native_live_after_cleanup": 0,
+      "mutex_records": 11,
+      "atexit_free_slots": 79,
+      "atexit_callback": "0x01967920",
+      "clock_microseconds": 37350213154
+    },
+    {
+      "attempt": 2,
+      "passed": true,
+      "function_entries": 53,
+      "checked_accesses": 2022,
+      "constructor_started": true,
+      "constructor_completed": false,
+      "thread_id_calls": 1,
+      "native_locks": 1,
+      "native_unlocks": 1,
+      "native_held_at_stop": 0,
+      "native_live_after_cleanup": 0,
+      "mutex_records": 11,
+      "atexit_free_slots": 79,
+      "atexit_callback": "0x01967920",
+      "clock_microseconds": 37358104544
+    }
+  ],
+  "cleanup_backed_bytes": 0,
+  "scope": "First constructor prefix through real destructor registration and native uncontended synchronization; stopped before singleton initializer; constructor incomplete"
+}

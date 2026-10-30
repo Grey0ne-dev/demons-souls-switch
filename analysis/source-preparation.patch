@@ -1,0 +1,66 @@
+diff --git a/port/CMakeLists.txt b/port/CMakeLists.txt
+index a9f5a3f..d33412b 100644
+--- a/port/CMakeLists.txt
++++ b/port/CMakeLists.txt
+@@ -245,8 +245,18 @@ else()
+     # aliasing off by default; here it has to be asked for, and the lifted code depends on it (guest
+     # memory is read through casts of every width). No fused multiply-add, as the runtime builds
+     # (its CMakeLists.txt says why).
++    # ARM targets have scalar SPU/VMX fallbacks and reject x86 SSE flags. Match
++    # the runtime's compiler probe rather than assuming every host is x86.
++    include(CheckCCompilerFlag)
++    include(CheckCXXCompilerFlag)
++    check_c_compiler_flag(-msse4.1 DES_C_HAS_MSSE41)
++    check_cxx_compiler_flag(-msse4.1 DES_CXX_HAS_MSSE41)
++    set(DES_SSE_FLAGS "")
++    if(DES_C_HAS_MSSE41 AND DES_CXX_HAS_MSSE41)
++        set(DES_SSE_FLAGS -msse4.1)
++    endif()
+     if(DES_PPU_OPT)
+-        set(DES_OPT_FLAGS -O2 -fwrapv -msse4.1)
++        set(DES_OPT_FLAGS -O2 -fwrapv ${DES_SSE_FLAGS})
+     else()
+         set(DES_OPT_FLAGS -O0)
+         set_source_files_properties("${RECOMP_DIR}/ppu_recomp_005.cpp" PROPERTIES COMPILE_OPTIONS "-O2")
+@@ -259,9 +269,9 @@ else()
+         -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-unused-label
+         -Wno-unused-but-set-variable)
+     target_compile_definitions(des_boot PRIVATE _GNU_SOURCE)
+-    option(DES_SPU_OPT "Build the lifted SPU images -O2 with SSE4.1" ON)
++    option(DES_SPU_OPT "Build the lifted SPU images -O2 with SSE4.1 where supported" ON)
+     if(DES_SPU_OPT)
+-        set_source_files_properties(${SPU_CHUNKS} PROPERTIES COMPILE_OPTIONS "-O2;-msse4.1")
++        set_source_files_properties(${SPU_CHUNKS} PROPERTIES COMPILE_OPTIONS "-O2;${DES_SSE_FLAGS}")
+     endif()
+ endif()
+ 
+diff --git a/port/des_prework.cpp b/port/des_prework.cpp
+index 2f00278..a672780 100644
+--- a/port/des_prework.cpp
++++ b/port/des_prework.cpp
+@@ -225,7 +225,12 @@ extern "C" void ps3_title_prework(void)
+     const char* knob = std::getenv("DES_PRECOMPILE");
+     if (knob && std::strcmp(knob, "0") == 0) return;
+     const bool force = knob && same_nocase(knob, "force");
++#if defined(_WIN32) || defined(PS3RECOMP_RSX_D3D12_VKD3D)
+     const char* cache = rsx_d3d12_shader_cache_path();
++#else
++    // The null backend has no D3D12 shader cache to precompile.
++    const char* cache = nullptr;
++#endif
+     if (!cache || !cache[0] || !ppu_vfs_root) return;   /* the cache is off */
+     const std::string dir = std::string(ppu_vfs_root) + kSep + "PS3_GAME" + kSep + "USRDIR" + kSep + "shader";
+     s_state.store(1);
+diff --git a/port/des_ui_stub.cpp b/port/des_ui_stub.cpp
+index 4823cf9..3c8ee73 100644
+--- a/port/des_ui_stub.cpp
++++ b/port/des_ui_stub.cpp
+@@ -16,6 +16,8 @@ void des_mouse_take(int* dx, int* dy) {
+ 
+ void des_mouse_refresh(void) {}
+ 
++void des_report_flip_hook(void) {}
++
+ int des_ui_start_screen_up(void) {
+     return 0;
+ }

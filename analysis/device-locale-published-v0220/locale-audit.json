@@ -1,0 +1,115 @@
+{
+  "elf_sha256": "90eaa5e9e48b4874292badc311ccea253e6a622ff188bfbdbe76e6f6821269d8",
+  "new_functions": {
+    "00011720": {
+      "source_chunk": "012",
+      "body_sha256": "4c837392492b37ac209e42770febe468e252df6059ab52730ee009ccbf05d51b"
+    },
+    "00179118": {
+      "source_chunk": "000",
+      "body_sha256": "41533e8fcf426d3129b0164bfb207d98553871dfb31efc52dc50b57126d43734"
+    },
+    "00F172D0": {
+      "source_chunk": "007",
+      "body_sha256": "16ae86823bdeeaa5bcc37fe64b66dd18771257c9b0da61f55ea41e159d143009"
+    },
+    "00F17448": {
+      "source_chunk": "007",
+      "body_sha256": "07d6148b93bec50d639ae137a62ca2c005345edd6d8be2abbce8d7d94e094926"
+    },
+    "01666594": {
+      "source_chunk": "011",
+      "body_sha256": "8429a58d6c94721e4a3080b2898262b930b593a962283156ec55414daae9bdc7"
+    },
+    "01676088": {
+      "source_chunk": "013",
+      "body_sha256": "1778f7b2fcfe949cba233571ebdf5954520c627107df211082f1ccbd0decf1da"
+    },
+    "016B7F40": {
+      "source_chunk": "011",
+      "body_sha256": "7eb6618bde37edcf34095582e4e8d3a853d5986fe1a66a6639c5e4b4e8e9acfb"
+    }
+  },
+  "original_ranges": [
+    {
+      "start": "0x179118",
+      "end": "0x1793c8",
+      "toc": "0x19b5040",
+      "opd": "0x19285f0"
+    },
+    {
+      "start": "0xf172d0",
+      "end": "0xf17448",
+      "toc": "0x19b5040",
+      "opd": "0x1985520"
+    },
+    {
+      "start": "0xf17448",
+      "end": "0xf174a0",
+      "toc": "0x19b5040",
+      "opd": "0x1985528"
+    },
+    {
+      "start": "0x1666594",
+      "end": "0x1666b50",
+      "toc": "0x19d3bac",
+      "opd": "0x19abb70"
+    },
+    {
+      "start": "0x16b7f40",
+      "end": "0x16b7f50",
+      "toc": "0x19d3bac",
+      "opd": "0x19acff8"
+    }
+  ],
+  "verified_cross_toc_tail_thunks": {
+    "01676088": {
+      "instructions": [
+        "0xF8410028",
+        "0x3C42FFFE",
+        "0x38421494",
+        "0x4B8A13B4"
+      ],
+      "reachable_end_exclusive": "0x01676098",
+      "tail_target": "0x00F17448",
+      "incoming_toc": "0x019D3BAC",
+      "outgoing_toc": "0x019B5040",
+      "neighboring_source_sequences": "Retained unchanged after unconditional return; unreachable from this entry"
+    },
+    "00011720": {
+      "instructions": [
+        "0xF8410028",
+        "0x3C420002",
+        "0x3842EB6C",
+        "0x49654E68"
+      ],
+      "reachable_end_exclusive": "0x00011730",
+      "tail_target": "0x01666594",
+      "incoming_toc": "0x019B5040",
+      "outgoing_toc": "0x019D3BAC",
+      "neighboring_source_sequences": "Retained unchanged after unconditional return; unreachable from this entry"
+    }
+  },
+  "string_progression": [
+    "*",
+    "C"
+  ],
+  "publications": {
+    "tls": "0x0E000430",
+    "public_handle": "0x60000030",
+    "globals": [
+      "0x01CE672C",
+      "0x01CE6730"
+    ],
+    "object": "0x60000040"
+  },
+  "next_allocation": {
+    "selected": false,
+    "request": 40,
+    "code": "0x0168ABD0",
+    "return_pc": "0x016A051C",
+    "stack": "0x0FEFFB60",
+    "toc": "0x019D3BAC",
+    "note": "Fourth runtime request is refused before operator-new entry; string-growth/new-handler/free/memmove paths remain unsupported."
+  }
+}

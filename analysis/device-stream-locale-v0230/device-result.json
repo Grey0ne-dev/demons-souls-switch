@@ -1,0 +1,42 @@
+{
+  "version": "0.23.0",
+  "source": "DBI MTP device log",
+  "passed": true,
+  "validation_checks": 3353,
+  "validation_mismatches": [],
+  "log_sha256": "4ff460952e193860295502415709294392bfb3e686aacf409f7925d4af25a484",
+  "attempts": [
+    {
+      "attempt": 1,
+      "passed": true,
+      "constructors_completed": 12,
+      "constructor_thirteen_started": true,
+      "function_entries": 747,
+      "checked_accesses": 12849,
+      "large_sort_partition_entries": 2,
+      "clock_ticks": 1531489469689,
+      "clock_microseconds": 79765076546
+    },
+    {
+      "attempt": 2,
+      "passed": true,
+      "constructors_completed": 12,
+      "constructor_thirteen_started": true,
+      "function_entries": 747,
+      "checked_accesses": 12849,
+      "large_sort_partition_entries": 2,
+      "clock_ticks": 1531557322043,
+      "clock_microseconds": 79768610523
+    }
+  ],
+  "reload_observed": true,
+  "cleanup_backed_bytes": 0,
+  "scope": "Twelve constructors completed; constructor thirteen creates six backed allocations and initializes stream locale/base handles before its first facet allocation",
+  "evidence_limits": "Object and method memory is checked by the on-device checkpoint validator; this log independently exposes summaries, the full function trace and final cleanup.",
+  "provenance": {
+    "validator_sha256": "039550baeb0f7a3894f9be28c16e51a807ae78d937b1cdbc670997612d986cf9",
+    "expected_trace_sha256": "9f2f5c86505c620c0736c4fa1704c769e6c6486f44230137e7d6cb7be202a6eb",
+    "reference_manifest_sha256": "82482ee1130d2e7883120308f3c5367d76037f91cad6d6ac7c6c77e01ba5e269",
+    "installed_candidate_sha256": "5d513cc6632739b449f3180506c04e878d0738a5eb8faa451fb13487f8449fc7"
+  }
+}

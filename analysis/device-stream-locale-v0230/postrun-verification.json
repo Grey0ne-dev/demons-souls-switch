@@ -1,0 +1,18 @@
+{
+  "version": "0.23.0",
+  "timestamp_utc": "2026-10-26T09:15:34.033339+00:00",
+  "device_execution_passed": true,
+  "attempts_passed": 2,
+  "reload_observed": true,
+  "validation_checks": 3353,
+  "validation_mismatches": [],
+  "candidate_sha256": "5d513cc6632739b449f3180506c04e878d0738a5eb8faa451fb13487f8449fc7",
+  "postrun_binary_sha256": "5d513cc6632739b449f3180506c04e878d0738a5eb8faa451fb13487f8449fc7",
+  "log_sha256": "4ff460952e193860295502415709294392bfb3e686aacf409f7925d4af25a484",
+  "device_result_sha256": "7b5d37eff3e279555d87766276b5f09f3b483276efd58fcff4131301c0983be7",
+  "sealed_source_hashes_match": true,
+  "sealed_evidence_hashes_match": true,
+  "mtp_released": true,
+  "clock_advance_microseconds": 3533977,
+  "cleanup_backed_bytes": 0
+}

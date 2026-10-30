@@ -1,0 +1,42 @@
+{
+  "version": "0.22.0",
+  "source": "DBI MTP device log",
+  "passed": true,
+  "validation_checks": 3121,
+  "validation_mismatches": [],
+  "log_sha256": "7bd5d86f13ab2e567688dc1a7471a5c015ab2d9c1a6040ec0459774c6adfb7ba",
+  "attempts": [
+    {
+      "attempt": 1,
+      "passed": true,
+      "constructors_completed": 12,
+      "constructor_thirteen_started": true,
+      "function_entries": 697,
+      "checked_accesses": 12492,
+      "large_sort_partition_entries": 2,
+      "clock_ticks": 1488487498006,
+      "clock_microseconds": 77525390521
+    },
+    {
+      "attempt": 2,
+      "passed": true,
+      "constructors_completed": 12,
+      "constructor_thirteen_started": true,
+      "function_entries": 697,
+      "checked_accesses": 12492,
+      "large_sort_partition_entries": 2,
+      "clock_ticks": 1488763861121,
+      "clock_microseconds": 77539784433
+    }
+  ],
+  "reload_observed": true,
+  "cleanup_backed_bytes": 0,
+  "scope": "Twelve constructors completed; constructor thirteen publishes the C locale in TLS, globals and public handle before its next runtime-mutex allocation",
+  "evidence_limits": "Object and method memory is checked by the on-device checkpoint validator; this log independently exposes summaries, the full function trace and final cleanup.",
+  "provenance": {
+    "validator_sha256": "71d7fd10c0a75dd56057c0e2160282eca053c352193bcf07e405239996a03b76",
+    "expected_trace_sha256": "18e0bec80087f8c3d67bd72b8d7b0ffcb7807a9a8b0543387b69bd934857cc26",
+    "reference_manifest_sha256": "82482ee1130d2e7883120308f3c5367d76037f91cad6d6ac7c6c77e01ba5e269",
+    "installed_candidate_sha256": "8cae8c3db80720a2be90183520f6a80f6576abe3afea9208343154bea00adcf8"
+  }
+}

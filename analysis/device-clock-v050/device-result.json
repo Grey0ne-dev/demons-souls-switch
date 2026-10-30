@@ -1,0 +1,34 @@
+{
+  "version": "0.5.0",
+  "source": "DBI MTP device log",
+  "log_sha256": "c095b99e18952ee1d9c3b0f3d023ec529b98f3c78f7d80c413c1fe2dfb09830d",
+  "attempts": [
+    {
+      "attempt": 1,
+      "passed": true,
+      "function_entries": 35,
+      "checked_accesses": 1839,
+      "clock_ticks": 692601063355,
+      "clock_frequency": 19200000,
+      "clock_microseconds": 36072972049,
+      "constructor_descriptor": "0x01951EA8",
+      "constructor_target": "0x007CF848",
+      "constructor_executed": false
+    },
+    {
+      "attempt": 2,
+      "passed": true,
+      "function_entries": 35,
+      "checked_accesses": 1839,
+      "clock_ticks": 692717641740,
+      "clock_frequency": 19200000,
+      "clock_microseconds": 36079043840,
+      "constructor_descriptor": "0x01951EA8",
+      "constructor_target": "0x007CF848",
+      "constructor_executed": false
+    }
+  ],
+  "clock_advanced_across_reload": true,
+  "cleanup_backed_bytes": 0,
+  "scope": "Real clock and timestamp store through first constructor enumeration; constructor not invoked; no gameplay result"
+}
